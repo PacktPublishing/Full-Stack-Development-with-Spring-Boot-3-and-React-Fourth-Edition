@@ -1,5 +1,7 @@
 package com.packt.cardatabase;
 
+import static org.springframework.security.config.Customizer.withDefaults;
+
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,11 +47,14 @@ public class SecurityConfig {
 
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-		http.csrf().disable().cors().and()
-				.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
-				.authorizeHttpRequests().requestMatchers(HttpMethod.POST, "/login").permitAll().anyRequest()
-				.authenticated().and().exceptionHandling().authenticationEntryPoint(exceptionHandler).and()
-				.addFilterBefore(authenticationFilter, UsernamePasswordAuthenticationFilter.class);
+		http.csrf((csrf) -> csrf.disable()).cors(withDefaults())
+				.sessionManagement((sessionManagement) -> 
+					sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+				.authorizeHttpRequests((authorizeHttpRequests) -> 
+					authorizeHttpRequests
+					.requestMatchers(HttpMethod.POST, "/login").permitAll().anyRequest().authenticated())
+				.addFilterBefore(authenticationFilter, UsernamePasswordAuthenticationFilter.class)
+				.exceptionHandling((exceptionHandling) -> exceptionHandling.authenticationEntryPoint(exceptionHandler));
 
 		return http.build();
 	}
