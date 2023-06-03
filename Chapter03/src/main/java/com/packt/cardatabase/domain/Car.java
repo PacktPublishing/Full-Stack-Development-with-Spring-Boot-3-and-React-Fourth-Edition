@@ -12,7 +12,7 @@ import jakarta.persistence.ManyToOne;
 public class Car {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long id;
+	private Long id;
 	private String brand, model, color, registerNumber;
 	private int modelYear, price;
 
@@ -43,13 +43,8 @@ public class Car {
 	    this.owner = owner;
 	}
 
-
-	public long getId() {
+	public Long getId() {
 		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
 	}
 
 	public String getBrand() {

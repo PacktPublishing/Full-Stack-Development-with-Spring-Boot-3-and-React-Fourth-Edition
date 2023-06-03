@@ -17,7 +17,7 @@ import jakarta.persistence.OneToMany;
 public class Owner {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long ownerid;
+	private Long ownerid;
 	private String firstname, lastname;
 
 	public Owner() {
@@ -29,7 +29,7 @@ public class Owner {
 		this.lastname = lastname;
 	}
 	
-    @JsonIgnore	
+  @JsonIgnore	
 	@OneToMany(cascade=CascadeType.ALL, mappedBy="owner")
 	private List<Car> cars;
 	    
@@ -42,12 +42,8 @@ public class Owner {
 	}
 
 
-	public long getOwnerid() {
+	public Long getOwnerid() {
 		return ownerid;
-	}
-
-	public void setOwnerid(long ownerid) {
-		this.ownerid = ownerid;
 	}
 
 	public String getFirstname() {
