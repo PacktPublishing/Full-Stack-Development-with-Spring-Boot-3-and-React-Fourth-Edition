@@ -34,7 +34,7 @@ public class Car {
   private CarRepository carRepository; 
 
   // Fetch all cars from db  
-  carRepositoty.findAll();  
+  carRepository.findAll();  
 }
 
 @Configuration 
