@@ -13,18 +13,18 @@ public class Car {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	private String brand, model, color, registerNumber;
+	private String brand, model, color, registrationNumber;
 	private int modelYear, price;
 
 	public Car() {}
 	
 	public Car(String brand, String model, String color, 
-				String registerNumber, int modelYear, int price, Owner owner) {
+				String registrationNumber, int modelYear, int price, Owner owner) {
 		super();
 		this.brand = brand;
 		this.model = model;
 		this.color = color;
-		this.registerNumber = registerNumber;
+		this.registrationNumber = registrationNumber;
 		this.modelYear = modelYear;
 		this.price = price;
 		this.owner = owner;
@@ -71,12 +71,12 @@ public class Car {
 		this.color = color;
 	}
 
-	public String getRegisterNumber() {
-		return registerNumber;
+	public String getRegistrationNumber() {
+		return registrationNumber;
 	}
 
-	public void setRegisterNumber(String registerNumber) {
-		this.registerNumber = registerNumber;
+	public void setRegistrationNumber(String registrationNumber) {
+		this.registrationNumber = registrationNumber;
 	}
 
 	public int getModelYear() {
