@@ -21,10 +21,12 @@ public class CardatabaseApplication implements CommandLineRunner {
 
 	private final CarRepository repository;
 	private final OwnerRepository orepository;
+	private final AppUserRepository urepository;
 
-	public CardatabaseApplication(CarRepository repository, OwnerRepository orepository) {
+	public CardatabaseApplication(CarRepository repository, OwnerRepository orepository, AppUserRepository urepository) {
 		this.repository = repository;
 		this.orepository = orepository;
+		this.urepository = urepository;
 	}
 	
 	@Autowired
