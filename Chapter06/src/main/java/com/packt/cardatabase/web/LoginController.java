@@ -1,6 +1,5 @@
 package com.packt.cardatabase.web;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -16,11 +15,13 @@ import com.packt.cardatabase.service.JwtService;
 
 @RestController
 public class LoginController {
-	@Autowired
-	private JwtService jwtService;
+	private final JwtService jwtService;
+	private final AuthenticationManager authenticationManager;
 
-	@Autowired
-	AuthenticationManager authenticationManager;
+	public LoginController(JwtService jwtService, AuthenticationManager authenticationManager) {
+        	this.jwtService = jwtService;
+		this.authenticationManager = authenticationManager;
+	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public ResponseEntity<?> getToken(@RequestBody AccountCredentials credentials) {
