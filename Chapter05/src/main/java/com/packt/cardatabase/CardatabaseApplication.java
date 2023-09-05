@@ -29,9 +29,6 @@ public class CardatabaseApplication implements CommandLineRunner {
 		this.urepository = urepository;
 	}
 	
-	@Autowired
-	private AppUserRepository urepository;
-
 	public static void main(String[] args) {
 		SpringApplication.run(CardatabaseApplication.class, args);
 	}
