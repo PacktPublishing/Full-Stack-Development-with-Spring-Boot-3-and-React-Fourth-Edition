@@ -11,10 +11,11 @@ import java.util.Date;
 
 @Component
 public class JwtService {
-  static final long EXPIRATIONTIME = 86400000; // 1 day in ms
+  static final long EXPIRATIONTIME = 86400000; // 1 day in ms. Should be shorter in production.
+
   static final String PREFIX = "Bearer";
-  // Generate secret key. Only for the demonstration
-  // You should read it from the application configuration
+  // Generate secret key. Only for demonstration purposes.
+  // In production, you should read it from the application configuration.
   static final Key key =   Keys.secretKeyFor
      (SignatureAlgorithm.HS256);
   // Generate signed JWT token
