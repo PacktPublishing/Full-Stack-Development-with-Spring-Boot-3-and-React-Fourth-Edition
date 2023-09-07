@@ -24,16 +24,16 @@ public class Owner {
 		this.firstname = firstname;
 		this.lastname = lastname;
 	}
-	
-	@OneToMany(cascade=CascadeType.ALL, mappedBy="owner")
+
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
 	private List<Car> cars;
-	    
-	public List<Car> getCars()  {
-	    return cars;
+
+	public List<Car> getCars() {
+		return cars;
 	}
-	    
-	public void setCars(List<Car> cars)  {
-	    this.cars = cars;
+
+	public void setCars(List<Car> cars) {
+		this.cars = cars;
 	}
 
 	public Long getOwnerid() {
