@@ -1,27 +1,27 @@
 package com.packt.cardatabase.web;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.packt.cardatabase.domain.AccountCredentials;
 import com.packt.cardatabase.service.JwtService;
 
 @RestController
 public class LoginController {
-	@Autowired
-	private JwtService jwtService;
+	private final JwtService jwtService;
+	private final AuthenticationManager authenticationManager;
 
-	@Autowired
-	AuthenticationManager authenticationManager;
+	public LoginController(JwtService jwtService, AuthenticationManager authenticationManager) {
+		this.jwtService = jwtService;
+		this.authenticationManager = authenticationManager;
+	}
 
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	@PostMapping("/login")
 	public ResponseEntity<?> getToken(@RequestBody AccountCredentials credentials) {
 		UsernamePasswordAuthenticationToken creds = new UsernamePasswordAuthenticationToken(credentials.username(),
 				credentials.password());
