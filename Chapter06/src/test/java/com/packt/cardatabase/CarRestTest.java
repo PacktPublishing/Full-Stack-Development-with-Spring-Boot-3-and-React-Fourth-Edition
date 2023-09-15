@@ -17,11 +17,12 @@ public class CarRestTest {
 	private MockMvc mockMvc;
 
 	@Test
-	public void testAuthentication() throws Exception {
-		// Testing authentication with correct credentials
-		this.mockMvc
-				.perform(post("/login").content("{\"username\":\"admin\",\"password\":\"admin\"}")
-						.header(HttpHeaders.CONTENT_TYPE, "application/json"))
-				.andDo(print()).andExpect(status().isOk());
-	}
+  public void testAuthentication() throws Exception {
+    // Testing authentication with correct credentials
+  	 this.mockMvc.
+      perform(post("/login").
+      content("{\"username\":\"admin\",\"password\":\"admin\"}").
+      header(HttpHeaders.CONTENT_TYPE, "application/json")).
+      andDo(print()).andExpect(status().isOk());
+  }
 }

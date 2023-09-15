@@ -13,7 +13,7 @@ import com.packt.cardatabase.domain.OwnerRepository;
 public class OwnerRepositoryTest {
 	@Autowired
 	private OwnerRepository repository;
-
+	
 	@Test
 	void saveOwner() {
 		repository.save(new Owner("Lucy", "Smith"));
@@ -26,5 +26,4 @@ public class OwnerRepositoryTest {
 		repository.deleteAll();
 		assertThat(repository.count()).isEqualTo(0);
 	}
-
 }
