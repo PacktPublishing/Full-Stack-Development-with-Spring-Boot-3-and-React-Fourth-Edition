@@ -11,7 +11,7 @@ function App() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6">
-            Carshop
+            Car Shop
           </Typography>
         </Toolbar>
       </AppBar>
