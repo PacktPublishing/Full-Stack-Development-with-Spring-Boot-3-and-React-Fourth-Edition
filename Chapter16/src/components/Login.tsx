@@ -3,11 +3,17 @@ import axios from 'axios';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
-import Carlist from './Carlist';
 import Snackbar from '@mui/material/Snackbar';
 
+import Carlist from './Carlist';
+
+type User = {
+  username: string;
+  password: string;
+}
+
 function Login() {
-  const [user, setUser] = useState({
+  const [user, setUser] = useState<User>({
     username: '',
     password: ''
   });
@@ -18,23 +24,27 @@ function Login() {
     setUser({...user, [event.target.name] : event.target.value});
   }
 
-  const login = () => {
+  const handleLogin = () => {
     axios.post(import.meta.env.VITE_API_URL + "/login", user, {
       headers: { 'Content-Type': 'application/json' }
     })
     .then(res => {
       const jwtToken = res.headers.authorization;
-
       if (jwtToken !== null) {
         sessionStorage.setItem("jwt", jwtToken);
         setAuth(true);
       }
     })
     .catch(() => setOpen(true));
+  }  
+
+  const handleLogout = () => {
+    setAuth(false);
+    sessionStorage.setItem("jwt", "");
   }
 
   if (isAuthenticated) {
-    return <Carlist />;
+    return <Carlist logOut={handleLogout} />;
   }
   else {
     return(
@@ -51,7 +61,7 @@ function Login() {
         <Button
           variant="outlined"
           color="primary"
-          onClick={login}>
+          onClick={handleLogin}>
             Login
         </Button>
         <Snackbar
