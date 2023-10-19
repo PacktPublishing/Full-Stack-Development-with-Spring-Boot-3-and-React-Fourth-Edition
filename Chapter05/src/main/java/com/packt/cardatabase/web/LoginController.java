@@ -25,15 +25,11 @@ public class LoginController {
 	public ResponseEntity<?> getToken(@RequestBody AccountCredentials credentials) {
 		UsernamePasswordAuthenticationToken creds = new UsernamePasswordAuthenticationToken(credentials.username(),
 				credentials.password());
-
 		Authentication auth = authenticationManager.authenticate(creds);
-
 		// Generate token
 		String jwts = jwtService.getToken(auth.getName());
-
 		// Build response with the generated token
-		return ResponseEntity.ok().header(HttpHeaders.AUTHORIZATION, "Bearer " + jwts)
+		return ResponseEntity.ok().header(HttpHeaders.AUTHORIZATION, "Bearer" + jwts)
 				.header(HttpHeaders.ACCESS_CONTROL_EXPOSE_HEADERS, "Authorization").build();
 	}
-
 }
