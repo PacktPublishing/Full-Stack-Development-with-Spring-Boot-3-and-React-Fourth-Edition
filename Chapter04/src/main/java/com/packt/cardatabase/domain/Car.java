@@ -13,9 +13,7 @@ public class Car {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-
 	private String brand, model, color, registrationNumber;
-
 	private int modelYear, price;
 
 	public Car() {
@@ -36,7 +34,6 @@ public class Car {
 	@JoinColumn(name = "owner")
 	private Owner owner;
 
-	// Getter and setter
 	public Owner getOwner() {
 		return owner;
 	}
