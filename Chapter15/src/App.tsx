@@ -11,19 +11,19 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <Container maxWidth="xl">
-    <CssBaseline />
+      <CssBaseline />
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6">
-            Carshop
-          </Typography>
+        <Typography variant="h6">
+        Car Shop
+        </Typography>
         </Toolbar>
-      </AppBar>
-      <QueryClientProvider client={queryClient}>
-        <Carlist />       
-      </QueryClientProvider>
-    </Container>
-  );
+     </AppBar>
+    <QueryClientProvider client={queryClient}>
+      <Carlist />
+    </QueryClientProvider>
+   </Container>
+  )
 }
 
 export default App;
