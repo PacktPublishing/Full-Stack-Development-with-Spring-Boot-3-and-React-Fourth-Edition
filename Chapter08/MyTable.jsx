@@ -1,5 +1,3 @@
-import React from 'react';
-
 function MyTable() {
   const data = [
     {id: 1, brand: 'Ford', model: 'Mustang'},
