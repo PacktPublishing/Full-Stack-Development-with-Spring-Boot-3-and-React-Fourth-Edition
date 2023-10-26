@@ -29,31 +29,48 @@ public class Car {
 
 Spring Boot examples
 ```
-public class Car { 
-  @Autowired 
-  private CarRepository carRepository; 
+// Constructor injection
+public class Car {
+  private final CarRepository carRepository;
 
-  // Fetch all cars from db  
-  carRepository.findAll();  
+  public Car(CarRepository carRepository) {
+    this.carRepository = carRepository;
+  }
+      
+  // Fetch all cars from db 
+  carRepository.findAll();
+  ...
 }
 
-@Configuration 
-
-public class ConfigFileResource {
-  @Bean(name="configFile") 
-  public File configFile() { 
-    File configFile = new File("configFile.xml"); 
-    return configFile; 
-  } 
+// Constructor to used for dependency injection
+@Autowired  
+public Car(CarRepository carRepository) {
+  this.carRepository = carRepository;
 }
 
-// By bean name 
-@Resource(name="configFile") 
-private ConfigFile cFile 
+// Setter injection
+@Service
+public class AppUserService {
+    private AppUserRepository userRepository;
 
-OR 
+    @Autowired
+    public void setAppUserRepository(AppUserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
-// Without name 
-@Resource 
-private ConfigFile cFile
+    // Other methods that use userRepository
+}
+
+// Field injection
+@Service
+public class CarDatabaseService implements CarService {
+	// Car database services
+}
+
+public class CarController {
+  @Autowired
+  private CarDatabaseService carDatabaseService;
+  //...
+}
+
 ```
