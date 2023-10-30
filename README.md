@@ -34,22 +34,17 @@ Add CRUD functionality to your apps Deploy your apps using AWS and Docker
 
 
 
-Part I: Backend Programming with Spring Boot
 1. Chapter 1, [Setting Up the Environment and Tools – Backend](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter01)
 2. Chapter 2, [Understanding Dependency Injection](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter02)
 3. Chapter 3, [Using JPA to Create and Access a Database](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter03)
 4. Chapter 4, [Creating a RESTful Web Service with Spring Boot](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter04)
 5. Chapter 5, [Securing Your Backend](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter05)
 6. Chapter 6, [Testing Your Backend](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter06)
-
-Part II:Frontend Programming with React
 7. Chapter 7, [Setting Up the Environment and Tools – Frontend](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter07)
 8. Chapter 8, [Getting Started with React](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter08)
 9. Chapter 9, [Introduction to TypeScript](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter09)
 10. Chapter 10, [Consuming the REST API with React](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter10)
 11. Chapter 11, [Useful Third-Party Components for React](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter11)
-
-Part III: Full Stack Development
 12. Chapter 12, [Setting Up the Frontend for Our Spring Boot RESTful Web Service](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter12)
 13. Chapter 13, [Adding CRUD Functionalities](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter13)
 14. Chapter 14, [Styling the Frontend with MUI](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter14)
