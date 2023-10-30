@@ -50,7 +50,7 @@ Add CRUD functionality to your apps Deploy your apps using AWS and Docker
 14. Chapter 14, [Styling the Frontend with MUI](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter14)
 15. Chapter 15, [Testing React Apps](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter15)
 16. Chapter 16, [Securing Your Application](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter16)
-17. Chapter 17, [Deploying Your Application]
+17. Chapter 17, Deploying Your Application
 
 ## Part I: Backend Programming with Spring Boot
 ### Chapter 01, Setting Up the Environment and Tools – Backend
