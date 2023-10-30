@@ -52,6 +52,7 @@ Add CRUD functionality to your apps Deploy your apps using AWS and Docker
 16. Chapter 16, [Securing Your Application](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/tree/main/Chapter16)
 17. Chapter 17, Deploying Your Application
 
+
 ## Part I: Backend Programming with Spring Boot
 ### Chapter 01, Setting Up the Environment and Tools – Backend
 
@@ -97,6 +98,7 @@ Add CRUD functionality to your apps Deploy your apps using AWS and Docker
 
 
 
+
 ## Part II:Frontend Programming with React
 ### Chapter 07, Setting Up the Environment and Tools – Frontend
 
@@ -128,6 +130,7 @@ Add CRUD functionality to your apps Deploy your apps using AWS and Docker
 ### Chapter 11, Useful Third-Party Components for React
 
 **Key Insights**:
+
 
 
 
