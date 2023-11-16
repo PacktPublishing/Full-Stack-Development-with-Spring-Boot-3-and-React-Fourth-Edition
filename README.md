@@ -80,7 +80,7 @@ Chapter 6, _Testing Your Backend_, covers testing in Spring Boot. We will create
 
 
 
-## Part II:Frontend Programming with React
+## Part II: Frontend Programming with React
 ### Chapter 07, Setting Up the Environment and Tools – Frontend
 Chapter 7, _Setting Up the Environment and Tools_ – Frontend, explains how to install the software needed in this book for frontend development.
 
@@ -146,7 +146,7 @@ Installation instructions:
 5. [https://nodejs.org/en/download](https://nodejs.org/en/download)
 
 ## Know more on the Discord server <img alt="Coding" height="25" width="32"  src="https://cliply.co/wp-content/uploads/2021/08/372108630_DISCORD_LOGO_400.gif">
-You can get more engaged on the discord server for more latest updates and discussions in the community at [Discord](https://packt.link/FullStackSpringBootReact4e)
+You can get more engaged on the Discord server for more latest updates and discussions in the community at [Discord](https://packt.link/FullStackSpringBootReact4e)
 
 ## Download a free PDF <img alt="Coding" height="25" width="40" src="https://emergency.com.au/wp-content/uploads/2021/03/free.gif">
 
