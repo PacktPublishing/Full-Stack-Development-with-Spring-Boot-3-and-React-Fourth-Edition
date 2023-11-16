@@ -120,6 +120,8 @@ Chapter 16, _Securing Your Application_, explains how to secure the frontend usi
 Chapter 17, _Deploying Your Application_, demonstrates how to deploy an application with AWS and Netlify, and how to use Docker containers.
 
 
+
+
 > If you feel this book is for you, get your [copy](https://www.amazon.com/Full-Stack-Development-Spring-React-ebook/dp/B0CGM5LNWN/ref=sr_1_1?crid=10CRUCBS8PS5V&keywords=Full+Stack+Development+with+Spring+Boot+3+and+React&qid=1698642246&s=books&sprefix=full+stack+development+with+spring+boot+3+and+react%2Cstripbooks-intl-ship%2C257&sr=1-1) today! <img alt="Coding" height="15" width="35"  src="https://media.tenor.com/ex_HDD_k5P8AAAAi/habbo-habbohotel.gif">
 
 
