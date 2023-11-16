@@ -14,13 +14,13 @@ By the end of this book, you'll be able to build a full stack application using 
 
 
 ## Key Takeaways
-Make fast and RESTful web services powered by Spring Data REST
-Create and manage databases using ORM, JPA, Hibernate, and more
-Explore the use of unit tests and JWTs with Spring Security
-Employ React Hooks, props, states, and more to create your frontend
-Harness the Material UI component library to customize your frontend
-Use the fetch API, Axios, and React Query for networking
-Add CRUD functionality to your apps Deploy your apps using AWS and Docker
+* Make fast and RESTful web services powered by Spring Data REST
+* Create and manage databases using ORM, JPA, Hibernate, and more
+* Explore the use of unit tests and JWTs with Spring Security
+* Employ React Hooks, props, states, and more to create your frontend
+* Harness the Material UI component library to customize your frontend
+* Use the fetch API, Axios, and React Query for networking
+* Add CRUD functionality to your apps Deploy your apps using AWS and Docker
 
 
 ## What's New 
@@ -33,9 +33,9 @@ This fourth edition has been updated to Spring Boot 3. Here are the biggest chan
 * Frontend deployment on Netlify 
 
 ## Outline and Chapter Summary
-If you’re an existing Java developer who wants to go full stack or pick up another frontend framework, this book is your concise introduction to React. In this three-part build-along, you’ll create a robust Spring Boot backend, a React frontend, and then deploy them together. 
-This new edition is updated to Spring Boot 3 and includes expanded content on security and testing. For the first time ever, it also covers React development with the in-demand TypeScript. 
-You’ll explore the elements that go into creating a REST API and testing, securing, and deploying your applications. You’ll learn about custom Hooks, third-party components, and MUI. 
+If you’re an existing Java developer who wants to go full stack or pick up another frontend framework, this book is your concise introduction to React. In this three-part build-along, you’ll create a robust Spring Boot backend, a React frontend, and then deploy them together.
+This new edition is updated to Spring Boot 3 and includes expanded content on security and testing. For the first time ever, it also covers React development with the in-demand TypeScript.
+You’ll explore the elements that go into creating a REST API and testing, securing, and deploying your applications. You’ll learn about custom Hooks, third-party components, and MUI.
 By the end of this book, you’ll be able to build a full stack application using the latest tools and modern best practices. 
 
 
