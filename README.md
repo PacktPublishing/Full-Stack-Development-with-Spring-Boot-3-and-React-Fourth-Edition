@@ -5,6 +5,10 @@ This is the code repository for [Full Stack Development with Spring Boot 3 and R
 **Build modern web applications using the power of Java, React, and TypeScript**
 
 The author of this book is -[Juha Hinkula](https://www.linkedin.com/in/juha-hinkula-6743322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
+## Errata
+[Errata](errata.md): Typos, tool user interface changes, or mistakes in code that would cause an error.
+
+
 ## About the book
 
 If you’re an existing Java developer who wants to go full stack or pick up another frontend framework, this book is your concise introduction to React. In this three-part build-along, you’ll create a robust Spring Boot backend, a React frontend, and then deploy them together.
