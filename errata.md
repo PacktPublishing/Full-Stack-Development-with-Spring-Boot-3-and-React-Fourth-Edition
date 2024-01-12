@@ -12,6 +12,10 @@ There is type in the first code example which demonstrates use of +-operator. Th
 let greeting = "Hello " + person.firstName + " " + person.lastName
 ```
 
+## Chapter 11 - Useful Third-Party Components for React
+
+js.coach site is not available anymore. You can use Awesome React Components https://github.com/brillout/awesome-react-components.
+
 ## Chapter 15 - Using Vitest (page 355) 
 Vitest released version 1.0, which requires Vite version 5. ,You can solve this by installing Vitest version 0.36 that is compatible with Vite version 4. See the installation command below:":
 ```bash
