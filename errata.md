@@ -5,6 +5,13 @@ If you find any mistakes, then please raise an issue in this repository or email
 ## Chapter 3 - Paging and Sorting repository (page 47) 
 In Spring Boot 3, `PagingAndSortingRepository` extends `Repository`.
 
+## Chapter 3 - `@Query` annotation
+By default, you can use JPQL (Java Persistence Query Language). You can use JPQL to select entities from the database based on a certain condition (The book example is JPQL). If you want to use SQL, you have to set `nativeQuery` attribute value to `true`, as shown in the following example.
+
+```
+@Query(value = "SELECT * FROM USERS u WHERE id = 1", nativeQuery = true)
+```
+
 ## Chapter 8 - Template literals (page 164)
 
 There is type in the first code example which demonstrates use of +-operator. The correct code is the following:
