@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.packt.cardatabase.domain.AccountCredentials;
 import com.packt.cardatabase.service.JwtService;
 
+import java.util.List;
+
 @RestController
 public class LoginController {
 	private final JwtService jwtService;
@@ -29,7 +31,9 @@ public class LoginController {
 		// Generate token
 		String jwts = jwtService.getToken(auth.getName());
 		// Build response with the generated token
-		return ResponseEntity.ok().header(HttpHeaders.AUTHORIZATION, "Bearer" + jwts)
-				.header(HttpHeaders.ACCESS_CONTROL_EXPOSE_HEADERS, "Authorization").build();
+		return ResponseEntity.ok().headers(httpHeaders -> {
+			httpHeaders.setBearerAuth(jwts);
+			httpHeaders.setAccessControlExposeHeaders(List.of(HttpHeaders.AUTHORIZATION));
+		}).build();
 	}
 }
