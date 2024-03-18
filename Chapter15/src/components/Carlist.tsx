@@ -13,7 +13,7 @@ function Carlist() {
  
   const queryClient = useQueryClient();
 
-  const { data, error, isSuccess } = useQuery({
+  const { data, isError, isLoading } = useQuery({
     queryKey: ["cars"], 
     queryFn: getCars
   });
@@ -66,10 +66,10 @@ function Carlist() {
     },  
   ];  
     
-  if (!isSuccess) {
+  if (isLoading) {
     return <span>Loading...</span>
   }
-  else if (error) {
+  else if (isError) {
     return <span>Error when fetching cars...</span>
   }
   else {
