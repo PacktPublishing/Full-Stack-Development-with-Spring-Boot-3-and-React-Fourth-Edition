@@ -19,7 +19,7 @@ function Carlist({ logOut }: CarlistProps) {
 
   const queryClient = useQueryClient();
 
-  const { data, error, isSuccess } = useQuery({
+const { data, isError, isLoading, isSuccess } = useQuery({
     queryKey: ["cars"],
     queryFn: getCars
   });
@@ -72,13 +72,13 @@ function Carlist({ logOut }: CarlistProps) {
     },
   ]; 
 
-  if (!isSuccess) {
+  if (isLoading) {
     return <span>Loading...</span>
   }
-  else if (error) {
+  else if (isError) {
     return <span>Error when fetching cars...</span>
   }
-  else {
+   else if (isSuccess) {
     return (
       <>
         <Stack direction="row" alignItems="center" justifyContent="space-between">
