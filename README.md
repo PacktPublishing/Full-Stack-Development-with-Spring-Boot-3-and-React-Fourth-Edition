@@ -167,3 +167,46 @@ _Juha Hinkula_ is a software development lecturer at Haaga-Helia University of A
 - [Microservices with Spring Boot 3 and Spring Cloud - Third Edition](https://www.packtpub.com/product/microservices-with-spring-boot-3-and-spring-cloud-third-edition/9781805128694)
 - [React 18 Design Patterns and Best Practices, 4e](https://www.packtpub.com/product/react-18-design-patterns-and-best-practices-fourth-edition/9781803233109)
 
+
+
+
+## Errata
+## Page 304 - Using environment variables
+### CarList Component Update
+In the CarList.tsx file, update the conditional rendering logic to handle loading and error states properly.
+
+Replace:
+```javascript
+const { data, error, isSuccess } = useQuery({
+    queryKey: ["cars"],
+    queryFn: getCars
+});
+
+if (!isSuccess) {
+    return Loading...
+}
+else if (error) {
+    return Error when fetching cars...
+}
+else {
+    ...
+}
+```
+ With:
+ ```javascript
+const { data, isSuccess, isError, isLoading } = useQuery({
+    queryKey: ["cars"],
+    queryFn: getCars
+});
+
+if (isLoading) {
+    return Loading...
+}
+else if (isError) {
+    return Error when fetching cars...
+}
+else if (isSuccess) {
+    ...
+}
+
+```
