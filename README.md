@@ -210,3 +210,8 @@ else if (isSuccess) {
 }
 
 ```
+
+
+### Page 52 : Adding relationships between tables
+The image referenced as Figure 3.16 on Page 52 under _Chapter 3, Using JPA to Create and Access a Database_ under Adding relationships between tables is incorrectly placed. It should appear later in Chapter 5 after the creation of the user entity.
+![image001](https://github.com/PacktPublishing/Full-Stack-Development-with-Spring-Boot-3-and-React-Fourth-Edition/assets/139948741/0d4eff62-6654-46df-90d5-96a80e97194e)
