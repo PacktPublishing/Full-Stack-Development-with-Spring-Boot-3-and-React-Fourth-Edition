@@ -27,6 +27,9 @@ let greeting = "Hello " + person.firstName + " " + person.lastName
 
 js.coach site is not available anymore. You can use Awesome React Components https://github.com/brillout/awesome-react-components.
 
+## Chapter 11 - Figure 11.7 "Grid with buttons" 
+The figure shows an extra column Owner Login that is not in the code.
+
 ## Chapter 15 - Using Vitest (page 355) 
 Vitest released version 1.0, which requires Vite version 5. ,You can solve this by installing Vitest version 0.36 that is compatible with Vite version 4. See the installation command below:":
 ```bash
